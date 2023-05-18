@@ -1,0 +1,62 @@
+//header
+header .langBox .arrow_ic {
+    background: url('../images/arrow_1.png') no-repeat center;
+    background-size: contain;
+}
+
+//ad
+.ad .marqueeBox .marquee_ic {
+    background: url('../images/marquee_ic.png') no-repeat center;
+    background-size: contain;
+}
+
+//mainArea
+.mainArea .hotGame .title .hot_ic {
+    background: url('../images/hot_ic.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .hotGame .title .arrow_ic {
+    background: url('../images/arrow_2.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .gameType .title .game_ic {
+    background: url('../images/game_ic.png') no-repeat center;
+    background-size: contain;
+}
+.mainArea .gameType .swiper-slide {
+    background: url('../images/gameType_ic.png') no-repeat;
+    background-size: 900%;
+}
+.mainArea .gameType .swiper-button-prev,
+.mainArea .gameType .swiper-button-next {
+    background: url('../images/arrow_3.png') no-repeat center;
+    background-size: contain;
+}
+
+//partnerBox
+.partnerBox .jili {
+    background: url('../images/partner/jili.png') no-repeat center;
+    background-size: contain;
+}
+.partnerBox .sp {
+    background: url('../images/partner/sp.png') no-repeat center;
+    background-size: contain;
+}
+.partnerBox .ab {
+    background: url('../images/partner/ab.png') no-repeat center;
+    background-size: contain;
+}
+.partnerBox .sport {
+    background: url('../images/partner/36588.png') no-repeat center;
+    background-size: contain;
+}
+.partnerBox .dg {
+    background: url('../images/partner/dg.png') no-repeat center;
+    background-size: contain;
+}
+
+//footer
+footer i {
+    background: url('../images/footer_ic.png') no-repeat;
+    background-size: 500%;
+}

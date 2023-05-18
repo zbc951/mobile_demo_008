@@ -1,0 +1,32 @@
+.partnerBox {
+    width: 100%;
+    height: auto;
+    background: $partner_BG;
+    padding: 0 7vw 5vh;
+
+    .swiper_partner {
+        width: 100%;
+        height: 5vh;
+        overflow: hidden;
+
+        .swiper-slide {
+            height: 100%;
+
+            &.jili {
+                width: 15vw;
+            }
+            &.sp {
+                width: 20vw;
+            }
+            &.ab {
+                width: 18vw;
+            }
+            &.sport {
+                width: 18vw;
+            }
+            &.dg {
+                width: 14vw;
+            }
+        }
+    }
+}

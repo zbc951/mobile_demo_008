@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link class="cssList" rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./js/javascript.js"></script>
+</head>
+<body ontouchstart="">
+    <!--header-->
+    <header>
+        <!--hamBox-->
+        <div class="hamBox">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        <a href="#" class="logo">
+            <img src="./images/logo.png" alt="">
+        </a>
+        <!--langBox-->
+        <label class="langBox">
+            <select>
+                <option value="">繁體中文</option>
+                <option value="">简体中文</option>
+                <option value="">日本語</option>
+                <option value="">ENGLISH</option>
+            </select>
+            <i class="arrow_ic"></i>
+        </label>
+    </header>
+    <!--ad-->
+    <section class="ad">
+        <!--marquee-->
+        <div class="marqueeBox">
+            <div class="title">
+                <i class="marquee_ic"></i>
+                <p>最新消息</p>
+            </div>
+            <div class="textBox">
+                <p>TEST............................新站上架，首儲111111即送</p>
+            </div>
+        </div>
+        <!--swiper-->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/banner.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/banner.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/banner.jpg" alt="">
+                </div>
+            </div>
+            <!-- dot -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--mainArea-->
+    <main class="mainArea">
+        <!--hotGame-->
+        <section class="hotGame">
+            <div class="title">
+                <p>
+                    <i class="hot_ic"></i>
+                    熱門遊戲
+                </p>
+                <button>
+                    更多
+                    <i class="arrow_ic"></i>
+                </button>
+            </div>
+            <!--swiper-->
+            <div class="swiper_hotGame">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/hotGame/img_1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/hotGame/img_2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/hotGame/img_3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/hotGame/img_4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--gameType-->
+        <section class="gameType">
+            <div class="title">
+                <p>
+                    <i class="game_ic"></i>
+                    遊戲項目
+                </p>
+            </div>
+            <!--swiper-->
+            <div class="swiperBox">
+                <div class="swiper_gameType">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide all active"></div>
+                        <div class="swiper-slide sport"></div>
+                        <div class="swiper-slide live"></div>
+                        <div class="swiper-slide slot"></div>
+                        <div class="swiper-slide lottery"></div>
+                        <div class="swiper-slide fish"></div>
+                        <div class="swiper-slide board"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <!--gameBox-->
+        <article class="gameBox">
+            <div class="title">
+                <i class="line"></i>
+                <p>全部遊戲</p>
+                <i class="line"></i>
+            </div>
+            <ul>
+                <li>
+                    <img src="./images/gameBox/bng.jpg" alt="">
+                    <p>BNG GAMES</p>
+                </li>
+                <li>
+                    <img src="./images/gameBox/pls.jpg" alt="">
+                    <p>PLS GAMES</p>
+                </li>
+                <li>
+                    <img src="./images/gameBox/ifun.jpg" alt="">
+                    <p>IFUN GAMES</p>
+                </li>
+                <li>
+                    <img src="./images/gameBox/36588.jpg" alt="">
+                    <p>36588 SPORTS</p>
+                </li>
+                <li>
+                    <img src="./images/gameBox/ab.jpg" alt="">
+                    <p>AB LIVES</p>
+                </li>
+                <li>
+                    <img src="./images/gameBox/gs.jpg" alt="">
+                    <p>京彩 LOTTERY</p>
+                </li>
+            </ul>
+        </article>
+    </main>
+    <!--partnerBox-->
+    <section class="partnerBox">
+        <!--swiper-->
+        <div class="swiper_partner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide jili"></div>
+                <div class="swiper-slide sp"></div>
+                <div class="swiper-slide ab"></div>
+                <div class="swiper-slide sport"></div>
+                <div class="swiper-slide dg"></div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <ul>
+            <li>
+                <i class="home"></i>
+            </li>
+            <li>
+                <i class="event"></i>
+            </li>
+            <li>
+                <i class="wallet"></i>
+            </li>
+            <li>
+                <i class="service"></i>
+            </li>
+            <li>
+                <i class="member"></i>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

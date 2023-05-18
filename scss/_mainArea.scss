@@ -1,0 +1,221 @@
+.mainArea {
+    width: 100%;
+    height: auto;
+    padding: 0 2vw;
+    margin-bottom: 3vh;
+
+    //hotGame
+    .hotGame {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2vh;
+
+        .title {
+            width: 100%;
+            height: auto;
+            border-bottom: solid 1px $mainBorder_1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 0.5vh;
+
+            p {
+                color: $titleColor_1;
+                font-size: 1rem;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+
+                i {
+                    width: 6vw;
+                    height: 6vw;
+                    margin-right: 1vw;
+                }
+            }
+
+            button {
+                background: none;
+                color: $linkColor;
+                font-size: 0.875rem;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+
+                i {
+                    width: 3.5vw;
+                    height: 3.5vw;
+                    margin-left: 1vw;
+                }
+            }
+        }
+
+        //swiper
+        .swiper_hotGame {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            padding: 1vh 2vw;
+
+            .swiper-slide {
+                font-size: 0;
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    //gameType
+    .gameType {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1vh;
+
+        .title {
+            width: 100%;
+            height: auto;
+            border-bottom: solid 1px $mainBorder_1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 0.5vh;
+
+            p {
+                color: $titleColor_1;
+                font-size: 1rem;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+
+                i {
+                    width: 6vw;
+                    height: 6vw;
+                    margin-right: 1vw;
+                }
+            }
+        }
+
+        //swiper
+        .swiperBox {
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding: 1.5vh 6.5vw;
+
+            .swiper_gameType {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+    
+                .swiper-slide {
+                    width: 20vw;
+                    height: 20vw;
+                    
+                    &:active,&.active {
+                        background-position-y: 100%;
+                    }
+    
+                    &.all {
+                        background-position-x: 25%;
+                    }
+                    &.sport {
+                        background-position-x: 37.5%;
+                    }
+                    &.live {
+                        background-position-x: 50%;
+                    }
+                    &.slot {
+                        background-position-x: 62.5%;
+                    }
+                    &.lottery {
+                        background-position-x: 75%;
+                    }
+                    &.fish {
+                        background-position-x: 87.5%;
+                    }
+                    &.board {
+                        background-position-x: 100%;
+                    }
+                }
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                width: 7vw;
+                height: 7vw;
+                top: 50%;
+                transform: translateY(-50%);
+                margin: 0;
+
+                &::after {
+                    content: "";
+                }
+            }
+            .swiper-button-prev {
+                left: 0;
+                transform: translateY(-50%) scaleX(-1);
+            }
+            .swiper-button-next {
+                right: 0;
+            }
+        }
+    }
+
+    //gameBox
+    .gameBox {
+        width: 100%;
+        height: auto;
+        padding: 0 5vw;
+
+        .title {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            margin-bottom: 2vh;
+
+            i {
+                width: 100%;
+                height: 2px;
+                background: $mainBorder_1;
+            }
+
+            p {
+                color: $mainColor_1;
+                font-size: 1rem;
+                font-weight: bold;
+                flex-shrink: 0;
+                margin: 0 2vw;
+            }
+        }
+
+        ul {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 1.5vh 7vw;
+
+            li {
+                width: auto;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    object-fit: contain;
+                }
+
+                p {
+                    width: 100%;
+                    color: $mainColor_1;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    text-align: center;
+                    margin-top: 1vh;
+                }
+            }
+        }
+    }
+}

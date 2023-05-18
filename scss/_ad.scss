@@ -1,0 +1,93 @@
+.ad {
+    width: 100%;
+    height: auto;
+    padding-top: 6vh;
+    margin-bottom: 2vh;
+
+    //marquee
+    .marqueeBox {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+
+        .title {
+            width: auto;
+            height: auto;
+            @include marquee_Title;
+            flex-shrink: 0;
+
+            i {
+                width: 5vw;
+                height: 5vw;
+                margin-right: 1.5vw;
+            }
+        }
+
+        .textBox {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+
+            p {
+                display: inline-block;
+                color: $mainColor_1;
+                font-size: 1rem;
+                font-weight: bold;
+                white-space: nowrap;
+                padding-left: 100%;
+                animation: marquee 10s linear 0s infinite;
+            }
+
+            @keyframes marquee {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+    }
+
+    //swiper
+    .swiper {
+        width: 100%;
+        height: auto;
+        border-top: solid 2px transparent;
+        background-image: $linearBorder_1;
+        margin-top: 1vh;
+
+        .swiper-slide {
+            height: auto !important;
+            font-size: 0;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        //dot
+        .swiper-pagination-bullets {
+            text-align: left;
+            bottom: 5%;
+            padding-left: 3%;
+
+            .swiper-pagination-bullet {
+                width: 0.75rem;
+                height: 0.75rem;
+                background: $ad_dotBG;
+                border-radius: 0;
+                opacity: 0.5;
+                margin: 0 2vw;
+            }
+
+            .swiper-pagination-bullet-active {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+        }
+    }
+}

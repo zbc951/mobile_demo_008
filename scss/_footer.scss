@@ -1,0 +1,50 @@
+footer {
+    width: 100%;
+    height: 5vh;
+    border-top: solid 2px transparent;
+    background-clip: padding-box, border-box;
+	background-origin: padding-box, border-box;
+    background-image: $footer_BG,$linearBorder_1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+
+    ul {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        li {
+            width: 20%;
+            height: 100%;
+            @include footerBtn;
+
+            &:last-child {
+                border: none;
+                box-shadow: none;
+            }
+
+            i {
+                width: 6vw;
+                height: 6vw;
+
+                &.home {
+                    background-position-x: 0;
+                }
+                &.event {
+                    background-position-x: 25%;
+                }
+                &.wallet {
+                    background-position-x: 50%;
+                }
+                &.service {
+                    background-position-x: 75%;
+                }
+                &.member {
+                    background-position-x: 100%;
+                }
+            }
+        }
+    }
+}

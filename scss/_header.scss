@@ -1,0 +1,72 @@
+header {
+    width: 100%;
+    height: 5vh;
+    background: $header_BG;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding-right: 2vw;
+    z-index: 100;
+
+    //hamBox
+    .hamBox {
+        width: 15vw;
+        height: 100%;
+        border-right: solid 2px $header_Border_1;
+        box-shadow: 2px 0 0 0 $header_Border_2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            width: 48%;
+            height: 10%;
+            @include hamBtn;
+            margin-bottom: 12%;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    //logo
+    .logo {
+        width: 42%;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    //langBox
+    .langBox {
+        width: auto;
+        height: 100%;
+        border: solid 2px $header_Border_1;
+        border-width: 0 2px;
+        box-shadow: 2px 0 0 0 $header_Border_2,2px 0 0 0 $header_Border_2 inset;
+        display: flex;
+        align-items: center;
+        padding: 0 2vw;
+
+        select {
+            width: auto;
+            height: auto;
+            @include langSelect;
+        }
+
+        i {
+            width: 3vw;
+            height: 3vw;
+            margin-left: 1vw;
+        }
+    }
+}

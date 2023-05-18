@@ -1,0 +1,61 @@
+$BG: #301d16;
+
+//header
+$header_BG: linear-gradient(to right,#9b4c18 0%,#6b2e15 12%,#9b4c18 42%,#9b4c18 76%,#6b2e15 98%);
+$header_Border_1: #af7644;
+$header_Border_2: #52200c;
+@mixin hamBtn {
+    background: linear-gradient(to right,#f0c851 0%,#e19f40 30%,#f0c851 58%,#fae394 77%,#f0c851 92%);
+    box-shadow: 0 5px 8px 0 #00000080;
+    border-radius: 30px;
+}
+@mixin langSelect {
+    background: none;
+    border: none;
+    color: #fff4d4;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+//ad
+@mixin marquee_Title {
+    background: linear-gradient(to right,#e6ae34 0%,#fae395 17%,#f3d058 43%,#e19f40 77%,#f3d058 100%);
+    border: solid 1px #ffeda5;
+    border-radius: 30px;
+    color: #472619;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 1.5vw 2vw;
+}
+$ad_dotBG: #ffffff;
+
+//partnerBox
+$partner_BG: #5f3318;
+
+//footer
+$footer_BG: linear-gradient(to right,#9b4c18 0%,#6b2e15 30%,#9b4c18 62%,#9b4c18 81%,#6b2e15 100%);
+@mixin footerBtn {
+    background: none;
+    border-right: solid 2px #af7644;
+    box-shadow: 2px 0 0 0 #52200c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:active,&.active {
+        background: linear-gradient(to top,#522311 0%,#32150a 100%);
+    }
+}
+
+//mainColor
+$mainColor_1: #eee5ca;
+
+$titleColor_1: #fdcb12;
+
+$mainBorder_1: #ffe085;
+
+$linkColor: #ffe085;
+
+$linearBorder_1: linear-gradient(to right, #cc8c2c 0%, #f7db6e 34%, #cc8c2c 73%, #f9d650 100%);
